@@ -84,6 +84,25 @@ class CustomNavbar extends HTMLElement {
         </div>
       </nav>
     `;
+    // Smooth scroll for shadow DOM nav links
+    const navLinks = this.shadowRoot.querySelectorAll('.nav-links a');
+    navLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        const href = link.getAttribute('href');
+        if (href === '/') {
+          e.preventDefault();
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+          return;
+        }
+        if (href && href.startsWith('#')) {
+          const target = document.querySelector(href);
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }
+      });
+    });
   }
 }
 customElements.define('custom-navbar', CustomNavbar);
