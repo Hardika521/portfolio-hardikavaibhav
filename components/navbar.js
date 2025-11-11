@@ -14,6 +14,7 @@ class CustomNavbar extends HTMLElement {
           width: 100%;
           top: 0;
           z-index: 1000;
+          box-sizing: border-box;
         }
         .logo {
           color: var(--dark);
@@ -24,6 +25,9 @@ class CustomNavbar extends HTMLElement {
 .nav-links {
           display: flex;
           gap: 2.4rem;
+          flex-wrap: wrap;
+          min-width: 0;
+          justify-content: flex-end;
         }
         .nav-links a {
           color: var(--dark);
@@ -31,6 +35,7 @@ class CustomNavbar extends HTMLElement {
           font-weight: 500;
           transition: all 0.3s ease;
           padding: 0.2rem 1.3rem;
+          white-space: nowrap;
         }
 .nav-links a:hover {
           color: #4cc9f0;
@@ -43,6 +48,26 @@ class CustomNavbar extends HTMLElement {
           font-weight: 600;
           transition: all 0.3s ease;
           margin-left: 1rem;
+        }
+        @media (max-width: 768px) {
+          nav {
+            padding: 1rem 1.25rem;
+            flex-direction: column;
+            align-items: flex-start;
+            row-gap: 0.5rem;
+          }
+          .logo {
+            font-size: 1.25rem;
+          }
+          .nav-links {
+            width: 100%;
+            gap: 0.5rem 0.75rem;
+            justify-content: flex-start;
+          }
+          .nav-links a {
+            padding: 0.4rem 0.8rem;
+            font-size: 0.95rem;
+          }
         }
       </style>
       <nav>
