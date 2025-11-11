@@ -136,9 +136,9 @@ class CustomFooter extends HTMLElement {
             <h3>Follow Me</h3>
             <div class="social-links">
               <a href="https://github.com/Hardika521" target="_blank"><i class="fab fa-github"></i></a>
-              <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
+              <a href="https://www.linkedin.com/in/hardika-verma-816b69308/" target="_blank"><i class="fab fa-linkedin"></i></a>
               <a href="https://twitter.com/yourhandle" target="_blank"><i class="fab fa-twitter"></i></a>
-              <a href="https://instagram.com/yourhandle" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://instagram.com/noerenokeren" target="_blank"><i class="fab fa-instagram"></i></a>
             </div>
             <p style="margin-top: 1rem;">Let's connect and collaborate!</p>
           </div>
