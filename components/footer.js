@@ -135,7 +135,7 @@ class CustomFooter extends HTMLElement {
           <div class="footer-box">
             <h3>Follow Me</h3>
             <div class="social-links">
-              <a href="https://github.com/hardika-verma" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://github.com/Hardika521" target="_blank"><i class="fab fa-github"></i></a>
               <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
               <a href="https://twitter.com/yourhandle" target="_blank"><i class="fab fa-twitter"></i></a>
               <a href="https://instagram.com/yourhandle" target="_blank"><i class="fab fa-instagram"></i></a>
